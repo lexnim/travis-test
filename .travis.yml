@@ -5,3 +5,12 @@ srevices:
 scripts:
     - docker build -t lexnim/node .
     - docker images lexnim/node
+
+before-deploy:
+    - docker login -u lexnim -p triptoheavenforme
+
+deploy:
+    provider: script
+    script: docker push lexnim/node
+    on:
+        branch: master
