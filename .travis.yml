@@ -1,0 +1,7 @@
+sudo: required
+srevices:
+    - docker
+
+scripts:
+    - docker build -t lexnim/node .
+    - docker images lexnim/node
