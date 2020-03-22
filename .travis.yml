@@ -7,7 +7,7 @@ scripts:
     - docker images lexnim/node
 
 before-deploy:
-    - docker login -u lexnim -p triptoheavenforme
+    - docker login -u lexnim -p
 
 deploy:
     provider: script
