@@ -7,7 +7,7 @@ scripts:
     - docker images lexnim/node
 
 before-deploy:
-    - docker login -u DOCKER_HUB_USERNAME -p DOCKER_HUB_PASSWORD
+    - docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD
 
 deploy:
     provider: script
